@@ -69,7 +69,6 @@
 				443F79B322324E31004698AF /* Home */,
 				443F7995223134AB004698AF /* AppDelegate.swift */,
 				443F79A722314696004698AF /* HomeViewBuilder.swift */,
-				443F79A9223152F8004698AF /* AppColorDao.swift */,
 				443F7999223134AB004698AF /* Main.storyboard */,
 				443F799C223134AB004698AF /* Assets.xcassets */,
 				443F799E223134AB004698AF /* LaunchScreen.storyboard */,
@@ -118,6 +117,7 @@
 		443F79B722324E5C004698AF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				443F79A9223152F8004698AF /* AppColorDao.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
