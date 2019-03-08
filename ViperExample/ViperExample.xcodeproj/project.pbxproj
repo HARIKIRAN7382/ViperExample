@@ -14,6 +14,10 @@
 		443F79A0223134AB004698AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443F799E223134AB004698AF /* LaunchScreen.storyboard */; };
 		443F79A822314696004698AF /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F79A722314696004698AF /* HomeViewBuilder.swift */; };
 		443F79AA223152F8004698AF /* AppColorDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F79A9223152F8004698AF /* AppColorDao.swift */; };
+		443F79BB22324EEE004698AF /* HomeIntrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F79BA22324EEE004698AF /* HomeIntrator.swift */; };
+		443F79BD22324F46004698AF /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F79BC22324F46004698AF /* HomeViewPresenter.swift */; };
+		443F79BF22324FD1004698AF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F79BE22324FD1004698AF /* HomeRouter.swift */; };
+		443F79C122325017004698AF /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F79C022325017004698AF /* HomeProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		443F79A1223134AB004698AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443F79A722314696004698AF /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
 		443F79A9223152F8004698AF /* AppColorDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorDao.swift; sourceTree = "<group>"; };
+		443F79BA22324EEE004698AF /* HomeIntrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIntrator.swift; sourceTree = "<group>"; };
+		443F79BC22324F46004698AF /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		443F79BE22324FD1004698AF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		443F79C022325017004698AF /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,8 @@
 		443F7994223134AB004698AF /* ViperExample */ = {
 			isa = PBXGroup;
 			children = (
+				443F79B322324E31004698AF /* Home */,
 				443F7995223134AB004698AF /* AppDelegate.swift */,
-				443F7997223134AB004698AF /* HomeViewController.swift */,
 				443F79A722314696004698AF /* HomeViewBuilder.swift */,
 				443F79A9223152F8004698AF /* AppColorDao.swift */,
 				443F7999223134AB004698AF /* Main.storyboard */,
@@ -68,6 +76,66 @@
 				443F79A1223134AB004698AF /* Info.plist */,
 			);
 			path = ViperExample;
+			sourceTree = "<group>";
+		};
+		443F79B322324E31004698AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				443F79B922324E71004698AF /* Protocols */,
+				443F79B822324E66004698AF /* Router */,
+				443F79B722324E5C004698AF /* Entity */,
+				443F79B622324E54004698AF /* Presenter */,
+				443F79B522324E45004698AF /* Interactor */,
+				443F79B422324E3B004698AF /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		443F79B422324E3B004698AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				443F7997223134AB004698AF /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		443F79B522324E45004698AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				443F79BA22324EEE004698AF /* HomeIntrator.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		443F79B622324E54004698AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				443F79BC22324F46004698AF /* HomeViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		443F79B722324E5C004698AF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		443F79B822324E66004698AF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				443F79BE22324FD1004698AF /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		443F79B922324E71004698AF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				443F79C022325017004698AF /* HomeProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +211,11 @@
 			files = (
 				443F79AA223152F8004698AF /* AppColorDao.swift in Sources */,
 				443F79A822314696004698AF /* HomeViewBuilder.swift in Sources */,
+				443F79BF22324FD1004698AF /* HomeRouter.swift in Sources */,
+				443F79BB22324EEE004698AF /* HomeIntrator.swift in Sources */,
+				443F79C122325017004698AF /* HomeProtocols.swift in Sources */,
 				443F7998223134AB004698AF /* HomeViewController.swift in Sources */,
+				443F79BD22324F46004698AF /* HomeViewPresenter.swift in Sources */,
 				443F7996223134AB004698AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
